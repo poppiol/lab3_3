@@ -52,7 +52,7 @@ public class Order {
 		orderState = State.REALIZED;
 	}
 
-	State getOrderState() {
+	public State getOrderState() {
 		return orderState;
 	}
 	
@@ -71,4 +71,5 @@ public class Order {
 	public static enum State {
 		CREATED, SUBMITTED, CONFIRMED, REALIZED, CANCELLED
 	}
+
 }
