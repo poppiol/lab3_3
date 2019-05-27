@@ -35,5 +35,10 @@ public class OrderTest {
             Assert.assertThat(order.getOrderState(), is(Order.State.SUBMITTED));
         }
 
+        @Test()
+    public void OrderTestWhenOrderIsCreated(){
+            Assert.assertThat(order.getOrderState(), is(Order.State.CREATED));
+        }
+
 
 }
