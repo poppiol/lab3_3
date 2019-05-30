@@ -3,7 +3,7 @@ package edu.iis.mto.time;
 import org.joda.time.DateTime;
 
 
-public class FakeSystemClock {
+public class TimeData {
 
     private DateTime time;
 
@@ -11,14 +11,15 @@ public class FakeSystemClock {
         return time;
     }
 
-    public FakeSystemClock() {
+    public TimeData() {
+        time = DateTime.now();
     }
 
     public void setTime(DateTime time) {
         this.time = time;
     }
 
-    public FakeSystemClock(DateTime time) {
+    public TimeData(DateTime time) {
         this.time = time;
     }
 }
